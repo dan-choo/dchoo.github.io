@@ -2,15 +2,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-
-
 --------------------------------------------------------------------------------
-
 config :: Configuration
 config = defaultConfiguration
   { destinationDirectory = "docs"
   }
-  
 main :: IO ()
 main = hakyll $ do
     match "images/*" $ do
